@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding.recyclerView.apply {
+        with(binding.recyclerView) {
             adapter = groupAdapter
             layoutManager = LinearLayoutManager(this@MainActivity)
         }
